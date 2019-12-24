@@ -22,12 +22,7 @@ ALLOWED_HOSTS = [
 '163.172.182.218',
 'localhost',
 '127.0.0.1',
-'51.15.91.183',
-'68.168.213.77',
-'hit.veritasoft.site',
-'veritasoft.site',
-'192.168.1.116',
-'192.168.1.133'
+
 ]
 # Application definition
 INSTALLED_APPS = [
@@ -68,7 +63,7 @@ EMAIL_USE_TLS = True
 #EMAIL_SSL_CERTFILE=
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'mail.veritasoft.site'
-EMAIL_HOST_PASSWORD = 'Verit@2018'
+EMAIL_HOST_PASSWORD = 'password'
 EMAIL_HOST_USER = 'info@veritasoft.site'
 EMAIL_PORT = 587
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
@@ -103,12 +98,6 @@ CORS_ORIGIN_WHITELIST = (
     '127.0.0.1:8080',
     '127.0.0.1:8000',
     '127.0.0.1:8081',
-    '51.15.91.183',
-    '68.168.213.77',
-    'hit.veritasoft.site:8000',
-    'veritasoft.site:8000',
-    '192.168.1.116:8080',
-    '192.168.1.133:8080',
 )
 CORS_ORIGIN_REGEX_WHITELIST = (r'^(https?://)?(\w+\.)?google\.com$',
                                r'^(https?://)?(\w+\.)?veritasoft\.site$',
@@ -166,12 +155,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'djangodb',
         'USER': 'root',
-        'PASSWORD': 'Gjc*27911972',
+        'PASSWORD': 'password',
         'HOST': 'localhost', # Or an IP Address that your DB is hosted on
-        #'PASSWORD': 'wingo*2018',
-        #'HOST': '192.168.1.105', # Or an IP Address that your DB is hosted on
-        #'PASSWORD': 'Gjc*27911972',
-        #'HOST': '51.15.93.81', # Or an IP Address that your DB is hosted on
         'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
@@ -181,12 +166,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'wingodb',
         'USER': 'root',
-        'PASSWORD': 'Gjc*27911972',
+        'PASSWORD': 'password',
         'HOST': 'localhost', # Or an IP Address that your DB is hosted on
-        #'PASSWORD': 'wingo*2018',
-        #'HOST': '192.168.1.105', # Or an IP Address that your DB is hosted on
-        #'PASSWORD': 'Gjc*27911972',
-        #'HOST': '51.15.93.81', # Or an IP Address that your DB is hosted on
         'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
